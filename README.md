@@ -1,28 +1,33 @@
 # 30-days-challnenge-newton-s-
 30 days challenge
-# day 7 question 
+
+
+# day 6
+Bob and Hammer
+Time Limit: 2 sec
+Memory Limit: 128000 kB
 Problem Statement
-You are given strings S and T consisting of lowercase English letters. Determine whether T is a (contiguous) substring of S.
-
-A string Y is said to be a (contiguous) substring of X if and only if Y can be obtained by performing the operation below on X zero or more times.
-
-Do one of the following.
-i) Delete the first character in X.
-ii) Delete the last character in X.
-For instance, the tag is a (contiguous) substring of voltage, while ace is not a (contiguous) substring of atcoder.
+Bob is at the origin of a number line. He wants to reach a goal at coordinate X.
+There is a wall at coordinate Y, which Bob cannot go beyond at first. However, after picking up a hammer at coordinate Z, he can destroy that wall and pass through.
+Determine whether Bob can reach the goal. If he can, find the minimum total distance he needs to travel to do so.
 Input
 The input is given from Standard Input in the following format:
-S
-T
+
+X Y Z
 
 Constraints
-S and T consist of lowercase English letters.
-1≤∣S∣, ∣T∣≤100 (∣X∣ denotes the length of a string X. )
+−1000≤X, Y, Z≤1000
+X, Y, and Z are distinct, and none of them is 0.
+All values in the input are integers.
 Output
-If T is a (contiguous) substring of S, print Yes; otherwise, print No.
+If Bob can reach the goal, print the minimum total distance he needs to travel to do so. If he cannot, print -1 instead.
 Example
 Sample Input 1
-voltage
-tag
+10 -10 1
 Sample Output 1
-Yes
+10
+
+Sample Input 2
+20 10 -10
+Sample Output 2
+40
